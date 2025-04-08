@@ -1,3 +1,7 @@
+### Test this in trinkets. idk how to test it on github codespaces
+### If you test in trinkets, make sure to upload the image files to the trinket 
+### I did use AI
+
 import pygame
 import random
 import sys
