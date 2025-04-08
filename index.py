@@ -1,5 +1,6 @@
 ### Test this in trinkets. idk how to test it on github codespaces
 ### If you test in trinkets, make sure to upload the image files to the trinket 
+### I couldn't find any images that fit so it looks very mediocre
 ### I did use AI
 
 import pygame
@@ -10,7 +11,7 @@ import sys
 pygame.init()
 
 # Screen settings
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 2000, 1800
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Game")
 
@@ -25,7 +26,7 @@ enemy_img = pygame.image.load('Rock.png')
 
 # Game variables
 player_x = WIDTH // 2 - 32
-player_y = HEIGHT - 80
+player_y = HEIGHT - 800
 player_speed = 5
 
 enemies = []
@@ -83,5 +84,4 @@ while running:
 
 pygame.quit()
 sys.exit()
-
 
