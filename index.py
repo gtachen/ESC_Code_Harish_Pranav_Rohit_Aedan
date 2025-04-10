@@ -20,7 +20,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 # Load images
-player_img = pygame.image.load('astro.png')  
+player_img = pygame.image.load('astro (2).png')  
 enemy_img = pygame.image.load('Rock.png')
 
 
