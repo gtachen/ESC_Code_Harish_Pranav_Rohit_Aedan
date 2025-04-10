@@ -11,7 +11,8 @@ import sys
 pygame.init()
 
 # Screen settings
-WIDTH, HEIGHT = 2000, 1800
+WIDTH = 900
+HEIGHT = 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Game")
 
@@ -26,7 +27,7 @@ enemy_img = pygame.image.load('Rock.png')
 
 # Game variables
 player_x = WIDTH // 2 - 32
-player_y = HEIGHT - 800
+player_y = HEIGHT - 80
 player_speed = 5
 
 enemies = []
@@ -66,7 +67,7 @@ while running:
     # Check Collisions: Player and Asteriod
     player_rect = pygame.Rect(player_x, player_y, 32, 32)
     for e in enemies:
-      enemy_rect = pygame.Rect(e[0], e[1], 20, 20)
+      enemy_rect = pygame.Rect(e[0], e[1], 100, 100)
       if player_rect.colliderect(enemy_rect):
         running = False
 
