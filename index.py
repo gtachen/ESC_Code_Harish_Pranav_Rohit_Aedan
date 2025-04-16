@@ -1,8 +1,3 @@
-### Test this in trinkets. idk how to test it on github codespaces
-### If you test in trinkets, make sure to upload the image files to the trinket 
-### I couldn't find any images that fit so it looks very mediocre
-### I did use AI
-
 import pygame
 import random
 import sys
@@ -21,17 +16,17 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 # Load images
-player_img = pygame.image.load('astro (2).png')  
-enemy_img = pygame.image.load('Rock.png')
+player_img = pygame.image.load('Spaceship 200x200.png.png')  
+enemy_img = pygame.image.load('Rock.png.png')
 
 
 # Game variables
 player_x = WIDTH // 2 - 32
-player_y = HEIGHT - 80
-player_speed = 5
+player_y = HEIGHT - 160
+player_speed = 7
 
 enemies = []
-enemy_speed = 10
+enemy_speed = 8
 spawn_delay = 30 # Interval for spawning enemies
 spawn_timer = 0
 
@@ -65,9 +60,9 @@ while running:
             enemies.remove(e)
             
     # Check Collisions: Player and Asteriod
-    player_rect = pygame.Rect(player_x, player_y, 32, 32)
+    player_rect = pygame.Rect(player_x, player_y, 100, 32)
     for e in enemies:
-      enemy_rect = pygame.Rect(e[0], e[1], 100, 100)
+      enemy_rect = pygame.Rect(e[0], e[1], 64, 50)
       if player_rect.colliderect(enemy_rect):
         running = False
 
